@@ -94,11 +94,11 @@ app.patch("/animais/:id", (req, res) => {
     })
 })
 
-// app.delete("/animais/:id", async (req, res) => {
-//     const {id} = req.params;
-//     await Animal.findByIdAndDelete(id)
-//     res.redirect("/animais");
-// });
+app.delete("/animais/:id", async (req, res) => {
+    const {id} = req.params;
+    await Animal.findByIdAndDelete(id)
+    res.redirect("/animais");
+});
 
 app.listen(3000, () => {
     console.log("Server ligado na porta 3000.")
