@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% if(animal) { %>
+        <h2>Detalhes de um animal</h2>
+        <p>Espécie: <%= animal.especie %></p>
+        <p>Idade: <%= animal.idade %></p>
+        <p>Porte: <%= animal.porte %></p>
+        <br>
+        <a href="/animais/<%= animal._id %>/edit"><button>Alterar</button></a> <br> <br>
+
+        <form action="/animais/<%=animal._id%>?_method=DELETE" method="post">
+            <button>Apagar</button>
+        </form> <br>
+
+        <a href="/animais"><button>Voltar</button></a>
+    <% } else { %>
+        <p>Não foi encontrado nenhum animal dessa espécie!</p>
+    <% } %>
+</body>
+</html>

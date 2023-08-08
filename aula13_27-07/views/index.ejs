@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de animais</title>
+</head>
+<body>
+    <h2>Lista de animais: </h2>
+    <ul>
+        <% for(animal of animais) { %>
+            <li><a href="/animais/<%= animal._id %>"><%= animal.especie %></a></li>
+        <% } %>
+    </ul> <br>
+    <a href="/animais/new"><button>Adicionar novo animal</button></a>
+</body>
+</html>
