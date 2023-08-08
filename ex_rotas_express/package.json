@@ -1,0 +1,14 @@
+{
+  "name": "ex2_16-03",
+  "version": "1.0.0",
+  "description": "Exercício de criação de rotas com express.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "terraleonardo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

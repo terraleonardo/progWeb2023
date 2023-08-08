@@ -1,0 +1,97 @@
+/* Autor: Leonardo Terra dos Santos - 401 Info */
+html {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)) no-repeat fixed, url(/img/home.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #000000;
+}
+::-webkit-scrollbar-thumb {
+    background: #4b4b4b;
+    border-radius: 10px;
+}
+
+.geral {
+    height: 92vh;
+    position: relative;
+    color: aliceblue;
+    font-family: Georgia, Verdana;
+}
+
+#title {
+    text-align: center;
+}
+
+.geral a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Georgia, Verdana;
+    list-style-type: none;
+}
+
+#livro img {
+    width: 20vw;
+    margin: 10px 25px;
+    float: left;
+    animation: fadeIn 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0; scale: 0.9;}
+    100% {opacity: 1; scale: 1; visibility: visible;}
+}
+
+#info {
+    display: inline;
+}
+
+#titulo_livro {
+    font-size: 35pt;
+    margin-bottom: 5pt;
+    animation: fadeIn 1s;
+    animation-delay: 0.2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+#autor {
+    margin-top: 0px;
+    font-size: 20pt;
+    animation: fadeIn 1s;
+    animation-delay: 0.25s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+#info p {
+    text-align: justify;
+    margin: 10px;
+    font-size: 14pt;
+    animation: fadeIn 1s;
+    animation-delay: 0.3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+}
+
+.rodape p {
+    color: rgb(90, 90, 90);
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    text-shadow: 0px 0px 5px black;
+}

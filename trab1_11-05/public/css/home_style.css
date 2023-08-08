@@ -1,0 +1,92 @@
+/* Autor: Leonardo Terra dos Santos - 401 Info */
+html {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)) no-repeat fixed, url(/img/home.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #000000;
+}
+::-webkit-scrollbar-thumb {
+    background: #4b4b4b;
+    border-radius: 10px;
+}
+
+.geral {
+    position: relative;
+    color: aliceblue;
+    font-family: Georgia, Verdana;
+    text-align: center;
+}
+
+.geral a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Georgia, Verdana;
+    list-style-type: none;
+}
+
+#subtitle {
+    font-weight: normal;
+    animation: fadeIn 1s;
+}
+
+.conteudo {
+    animation: fadeIn 0.6s;
+    animation-delay: 0.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1; visibility: visible;}
+}
+
+.column {
+    float: left;
+    width: 25%;
+    transition: 0.4s;
+}
+
+.column:hover {
+    transform: scale(1.05);
+}
+
+.column img {
+    height: 50vh;
+    margin: 10px 10px 0px 10px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.book_title {
+    margin-top: 10px;
+    padding: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 970px) {
+    .column {width: 100%;}
+}
+
+.rodape a{
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+}
+
+.rodape p{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    text-shadow: 0px 0px 5px black;
+}
